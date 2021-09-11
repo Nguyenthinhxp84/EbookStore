@@ -15,6 +15,15 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script type="text/javascript">
+    $("#btnSumbit").click(function () {
+        if ($("#keyword").val().trim() == "") {
+            alert("Bạn chưa nhập tên sách");
+            return false;
+        }
+    })
+
+</script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -29,6 +38,13 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">EBOOK</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Giới thiệu</a></li>
+                        <form action="/Desktop/Ebook/" id="fSearch" method="get">      <div class="search-view">
+                                    <input class="style1" id="keyword" name="keyword" type="text" value="" />
+                                
+                                <input type="submit" value="Tìm kiếm" class="style3" id="btnSumbit" />
+                                <div class="clear"></div> 
+                            </div>
+                        </form>
                         
                     </ul>
                 </div>
@@ -70,7 +86,7 @@
                     <div class="responsive">
                           <div class="gallery">
                             <a target="_blank" href="http://opac.iuh.edu.vn/so-tay-sinh-vien/index.html">
-                              <img src="assets/img/portfolio/cabin.png" alt="Forest" width="600" height="400">
+                              <img src="assets/img/portfolio/cabin.png" alt="Forest" width="800" height="400">
                             </a>
                             <div class="desc">Nguyễn Thịnh</div>
                           </div>
@@ -175,9 +191,6 @@
                           </div>
                         </div>
                     <!-- Portfolio Item 6-->
-                    
-
-                    
                 </div>
             </div>
         </section>
