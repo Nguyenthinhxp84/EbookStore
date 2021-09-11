@@ -11518,9 +11518,10 @@ div.desc {
 }
 
 .responsive {
-  padding: 15px 20px;
-  float: left;
-  width: 25.99999%;
+    padding: 15px 5px;
+    float: left;
+    width: 33.3%;
+    text-align: center;
 }
 
 @media only screen and (max-width: 700px) {
