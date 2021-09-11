@@ -14,16 +14,12 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <script type="text/javascript">
-             $("#btnSumbit").click(function () {
-        if ($("#keyword").val().trim() == "") {
-            alert("Bạn chưa nhập tên sách");
-            return false;
-        }
-    })
+        <link href="css/styles.css" rel="stylesheet" /> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
 
-</script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -38,13 +34,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">EBOOK</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Giới thiệu</a></li>
-                        <form action="/EbookStore/index.html" id="fSearch" method="get">      <div class="search-view">
-                                    <input class="style1" id="keyword" name="keyword" type="text" value="" />
-                                
-                                <input type="submit" value="Tìm kiếm" class="style3" id="btnSumbit" />
-                                <div class="clear"></div> 
-                            </div>
-                        </form>
+                         
                         
                     </ul>
                 </div>
@@ -79,119 +69,68 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Grid Items-->             
-
-
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="responsive">
+                <div class="container mt-3">
+    <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <table class="table table-bordered">
+    
+    <tbody id="myTable">
+      <tr>
+        <td>
+          <div class="responsive">
                           <div class="gallery">
                             <a target="_blank" href="http://opac.iuh.edu.vn/so-tay-sinh-vien/index.html">
                               <img src="assets/img/portfolio/cabin.png" alt="Forest" width="800" height="400">
                             </a>
-                            <div class="desc">Nguyễn Thịnh</div>
+                            <div class="desc">Nguyễn</div>
                           </div>
-                        </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="responsive">
+          </div>
+
+          <div class="responsive">
                           <div class="gallery">
                             <a target="_blank" href="http://opac.iuh.edu.vn/so-tay-sinh-vien/index.html">
-                              <img src="assets/img/portfolio/cabin.png" alt="Forest" width="600" height="400">
+                              <img src="assets/img/portfolio/cabin.png" alt="Forest" width="800" height="400">
                             </a>
-                            <div class="desc">Nguyễn Thịnh</div>
+                            <div class="desc">Nguyễn</div>
                           </div>
-                        </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="responsive">
+          </div>
+          <div class="responsive">
                           <div class="gallery">
                             <a target="_blank" href="http://opac.iuh.edu.vn/so-tay-sinh-vien/index.html">
-                              <img src="assets/img/portfolio/cabin.png" alt="Forest" width="600" height="400">
+                              <img src="assets/img/portfolio/cabin.png" alt="Forest" width="800" height="400">
                             </a>
-                            <div class="desc">Nguyễn Thịnh</div>
+                            <div class="desc">Nguyễn</div>
                           </div>
-                        </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="responsive">
+          </div>
+          <div class="responsive">
                           <div class="gallery">
                             <a target="_blank" href="http://opac.iuh.edu.vn/so-tay-sinh-vien/index.html">
-                              <img src="assets/img/portfolio/cabin.png" alt="Forest" width="600" height="400">
+                              <img src="assets/img/portfolio/cabin.png" alt="Forest" width="800" height="400">
                             </a>
-                            <div class="desc">Nguyễn Thịnh</div>
+                            <div class="desc">Nguyễn</div>
                           </div>
-                        </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="responsive">
-                          <div class="gallery">
-                            <a target="_blank" href="http://opac.iuh.edu.vn/so-tay-sinh-vien/index.html">
-                              <img src="assets/img/portfolio/cabin.png" alt="Forest" width="600" height="400">
-                            </a>
-                            <div class="desc">Nguyễn Thịnh</div>
-                          </div>
-                        </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="responsive">
-                          <div class="gallery">
-                            <a target="_blank" href="http://opac.iuh.edu.vn/so-tay-sinh-vien/index.html">
-                              <img src="assets/img/portfolio/cabin.png" alt="Forest" width="600" height="400">
-                            </a>
-                            <div class="desc">Nguyễn Thịnh</div>
-                          </div>
-                        </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="responsive">
-                          <div class="gallery">
-                            <a target="_blank" href="http://opac.iuh.edu.vn/so-tay-sinh-vien/index.html">
-                              <img src="assets/img/portfolio/cabin.png" alt="Forest" width="600" height="400">
-                            </a>
-                            <div class="desc">Nguyễn Thịnh</div>
-                          </div>
-                        </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="responsive">
-                          <div class="gallery">
-                            <a target="_blank" href="http://opac.iuh.edu.vn/so-tay-sinh-vien/index.html">
-                              <img src="assets/img/portfolio/cabin.png" alt="Forest" width="600" height="400">
-                            </a>
-                            <div class="desc">Nguyễn Thịnh</div>
-                          </div>
-                        </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="responsive">
-                          <div class="gallery">
-                            <a target="_blank" href="http://opac.iuh.edu.vn/so-tay-sinh-vien/index.html">
-                              <img src="assets/img/portfolio/cabin.png" alt="Forest" width="600" height="400">
-                            </a>
-                            <div class="desc">Nguyễn Thịnh</div>
-                          </div>
-                        </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="responsive">
-                          <div class="gallery">
-                            <a target="_blank" href="http://opac.iuh.edu.vn/so-tay-sinh-vien/index.html">
-                              <img src="assets/img/portfolio/cabin.png" alt="Forest" width="600" height="400">
-                            </a>
-                            <div class="desc">Nguyễn Thịnh</div>
-                          </div>
-                        </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="responsive">
-                          <div class="gallery">
-                            <a target="_blank" href="http://opac.iuh.edu.vn/so-tay-sinh-vien/index.html">
-                              <img src="assets/img/portfolio/cabin.png" alt="Forest" width="600" height="400">
-                            </a>
-                            <div class="desc">Nguyễn Thịnh</div>
-                          </div>
-                        </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="responsive">
-                          <div class="gallery">
-                            <a target="_blank" href="http://opac.iuh.edu.vn/so-tay-sinh-vien/index.html">
-                              <img src="assets/img/portfolio/cabin.png" alt="Forest" width="600" height="400">
-                            </a>
-                            <div class="desc">Nguyễn Thịnh</div>
-                          </div>
-                        </div>
-                    <!-- Portfolio Item 6-->
-                </div>
+          </div>
+        </td>
+        
+      </tr>     
+    </tbody>
+  </table>
+  
+  <p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+                
             </div>
         </section>
         <!-- About Section-->
